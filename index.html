@@ -4,22 +4,48 @@
         <title> 
           Carlos Roberto Gonçalves de Azevedo
         </title>
+        <link href="https://fonts.googleapis.com/css2? família=Fonte+Sans+Pro&display=swap" rel="stylesheet">
         <style>
-            body {
-                background: #282a36;
-            }
-            .Links {
-                background: red;
-            }
+                * {/*esse seletor vai mudar o estilo de todo o html*/
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
 
+            }
+            body{
+                background: #282a36;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            header{
+                padding: 32px; /*Tamanho das margens*/
+                border-bottom: 1px solid #333; /*Linha cinza escuro na parte de baixo*/
+                background: rgba(0, 0, 0, 0.1); /*Cor de Fundo do quadro (cor azul escuro)*/
+            }
+            header div{
+                text-align: center;/*posiciona o texto no meio*/
+            }
+            header div a {
+                color: white;/*cor da fonte*/
+                font-size: 18px;/*tamanho da fonte*/
+                line-height: 28px;/*altura da fonte*/
+                margin: 0 16px;/*margem 0 em cima e em baixo, 16 nas laterais*/
+                text-decoration: none;/*tira o sublinhado de link do texto*/
+            }
+            header div a:hover{
+                color: #50fa7b;/*cor fica verde quando passar o mouse em cima da palavra*/
+                transition: color 200ms;/*tempo de transição de cor*/
+            }
         </style>
     </head>
     <body>
         <header>
-            <div class="Links">
+            <div class="links">
                 <a href="/">Sobre</a>
-                <a href="/">Representadas</a>
+                <a href="/">Aulas</a>
             </div>
         </header>
+        <div id="wrapper">
+            <img src="FOTO DO GITHUB" alt="CARLOS ROBERTO GONCALVES DE AZEVEDO"> 
+        </div>
     </body>
 </html>
